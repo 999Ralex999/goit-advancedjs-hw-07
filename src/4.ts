@@ -5,7 +5,7 @@ class Key {
     this.signature = Math.random().toString(36);
   }
 
-  getSignature() {
+  getSignature(): string {
     return this.signature;
   }
 }
@@ -13,7 +13,7 @@ class Key {
 class Person {
   constructor(private key: Key) {}
 
-  getKey() {
+  getKey(): Key {
     return this.key;
   }
 }
